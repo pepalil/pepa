@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet Pepa, the playful and quirky cousin of Pepe the Frog!">
+    <title>Pepa - The Playful Cousin of Pepe the Frog</title>
+    <style>
+        /* Reset and Basic Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #32cd32; /* Set background to green */
+            color: #333;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2f4f4f;
+        }
+        h3 {
+            color: #ff6347;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #ff6347, #ff1493);
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Main Section Styles */
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        main h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        main p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        /* Image Section */
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        /* Button Styles */
+        .cta-button {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 15px;
+            background: #ff6347;
+            color: white;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background 0.3s, transform 0.3s;
+            cursor: pointer;
+        }
+        .cta-button:hover {
+            background: #ff1493;
+            transform: scale(1.05);
+        }
+
+        .cta-button:active {
+            transform: scale(0.98);
+        }
+
+        /* Copy Text Style */
+        .cta-button span {
+            word-wrap: break-word;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2f4f4f;
+            color: white;
+        }
+
+        footer a {
+            color: #ff6347;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contract Address */
+        .contract-address {
+            margin-top: 15px;
+            font-size: 1rem;
+            color: #ff6347;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            main p {
+                font-size: 1rem;
+            }
+            .cta-button {
+                font-size: 1.1rem;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Pepa</h1>
+        <p>The Playful, Quirky Cousin of Pepe the Frog</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <img class="hero-image" src="./pepa_image.jpg" alt="Pepa the Meme">
+
+        <h2>About Pepa</h2>
+        <p>Pepa is the playful, quirky cousin of the iconic Pepe the Frog. While she shares Pepe’s irreverence and wit, Pepa adds her own unique flair to the meme world with a vibrant, fun-loving personality. Quickly becoming a beloved figure in internet culture, Pepa is adored by meme creators and fans for her charm and relatability.</p>
+
+        <p>What makes Pepa stand out is her ability to capture a wide array of emotions—whether it’s the chaos of everyday life, the thrill of small victories, or the absurdity of internet trends. With her bright colors, expressive face, and playful nature, Pepa is the perfect embodiment of the spontaneous humor that defines modern meme culture.</p>
+
+        <p>Just like her cousin Pepe, Pepa constantly evolves as users remix, reinterpret, and spread her across social media platforms. Whether she’s being sarcastic, relatable, or simply absurd, Pepa represents the ever-changing, playful essence of internet humor. And of course, Pepa’s creation comes courtesy of ChatGPT—because even in the world of memes, AI knows how to keep things fun!</p>
+
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Created with love by <a href="https://www.openai.com" target="_blank">AI</a>. Connect with us for more meme fun!</p>
+        
+        <!-- Contract Address (displayed below as well) -->
+        <p class="contract-address">Contract Address: XXXXXXXXXXXXXXXXXXXXXXXpump</p>
+    </footer>
+
+    <script>
+        function copyAddress() {
+            const address = "2f7wPHf8MFD7VbfhQXN8CAhSG6LNS2DWpLwVcq5F8bJy";
+            navigator.clipboard.writeText(address).then(function() {
+                alert("Address copied to clipboard!");
+            }, function(err) {
+                console.error("Error copying address: ", err);
+            });
+        }
+    </script>
+</body>
+</html>
